@@ -1,0 +1,16 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+
+---            #---三个杠用于区分三个配置环境
+spring:
+  profiles: dev  #开发环境
+  application:
+    name: microservicecloud-config-atguigu-dev
+  
+---
+spring:
+  profiles: test   #测试环境
+  application:
+    name: microservicecloud-config-atguigu-test
